@@ -41,7 +41,7 @@ const EditAppointment = () => {
     setAppointment(reduxAppointment)
   }, [reduxAppointment])
 
-  const { id } = useParams()
+  const { id } = useParams<{id:any}>()
   useEffect(() => {
     if (id) {
       dispatch(fetchAppointment(id))

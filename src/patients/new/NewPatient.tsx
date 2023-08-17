@@ -54,7 +54,7 @@ const NewPatient = () => {
   }
 
   const onSave = () => {
-    let duplicatePatients = []
+    let duplicatePatients:any = []
     if (patients !== undefined) {
       duplicatePatients = patients.filter((existingPatient: any) =>
         isPossibleDuplicatePatient(patient, existingPatient),

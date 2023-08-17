@@ -75,7 +75,7 @@ const NewLabRequest = () => {
         `${t('lab.successfullyCreated')} ${newLab?.type} ${newLab?.patient}`,
       )
       setError(undefined)
-    } catch (e) {
+    } catch (e:any) {
       setError(e)
     }
   }

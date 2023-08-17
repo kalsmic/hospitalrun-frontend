@@ -49,7 +49,7 @@ describe('Use Complete lab', () => {
     await act(async () => {
       try {
         await executeMutation(() => useCompleteLab(), lab)
-      } catch (e) {
+      } catch(e:any) {
         expect(e).toEqual(expectedLabError)
         expect(LabRepository.saveOrUpdate).not.toHaveBeenCalled()
       }

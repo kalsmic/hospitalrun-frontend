@@ -18,7 +18,7 @@ const ViewAppointment = () => {
   const updateTitle = useUpdateTitle()
   updateTitle(t('scheduling.appointments.viewAppointment'))
   const dispatch = useDispatch()
-  const { id } = useParams()
+  const { id } = useParams<{id:any}>()
   const history = useHistory()
   const { appointment, patient, status } = useSelector((state: RootState) => state.appointment)
   const { permissions } = useSelector((state: RootState) => state.user)

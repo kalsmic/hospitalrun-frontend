@@ -65,7 +65,7 @@ describe('use add care goal', () => {
 
     try {
       await executeMutation(() => useAddCareGoal(), { patientId: '123', careGoal: {} })
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(expectedError)
     }
 

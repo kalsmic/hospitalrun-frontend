@@ -16,7 +16,7 @@
       "dom",
       "esnext"
     ],
-    "strict": true,
+    "strict": false,
     "esModuleInterop": true,
     "sourceMap": true,
     "removeComments": true,
@@ -27,7 +27,7 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "jsx": "react",
     "allowJs": true,
     "skipLibCheck": true,

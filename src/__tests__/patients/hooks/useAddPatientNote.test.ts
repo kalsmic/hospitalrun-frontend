@@ -21,7 +21,7 @@ describe('use add note', () => {
 
     try {
       await executeMutation(() => useAddPatientNote(), { patientId: '123', note: {} })
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(expectedError)
     }
 

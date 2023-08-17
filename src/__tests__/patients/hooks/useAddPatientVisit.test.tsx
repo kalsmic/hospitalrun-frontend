@@ -52,7 +52,7 @@ describe('use add visit', () => {
 
     try {
       await executeMutation(() => useAddVisit(), { patientId: '123', visit: {} })
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(expectedError)
     }
 

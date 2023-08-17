@@ -27,7 +27,7 @@ describe('use allergy', () => {
 
     try {
       await executeQuery(() => useAllergy(expectedPatientId, expectedAllergy.id))
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(new Error('Allergy not found'))
     }
   })

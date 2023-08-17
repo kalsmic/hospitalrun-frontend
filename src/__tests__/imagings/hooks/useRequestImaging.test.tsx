@@ -47,7 +47,7 @@ describe('useReportIncident', () => {
 
     try {
       await executeMutation(() => useRequestImaging(), {})
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(expectedImagingRequestError)
       expect(ImagingRepository.save).not.toHaveBeenCalled()
     }

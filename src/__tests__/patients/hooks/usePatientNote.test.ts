@@ -35,7 +35,7 @@ describe('use note', () => {
 
     try {
       await executeQuery(() => usePatientNote(expectedPatientId, expectedNote.id))
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(new Error('Timed out in waitFor after 1000ms.'))
     }
   })

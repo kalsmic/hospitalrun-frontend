@@ -57,7 +57,7 @@ describe('useReportIncident', () => {
 
     try {
       await executeMutation(() => useReportIncident(), {})
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(expectedIncidentError)
       expect(IncidentRepository.save).not.toHaveBeenCalled()
     }

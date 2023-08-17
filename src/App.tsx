@@ -23,7 +23,7 @@ const App: React.FC = () => {
         if (session.userCtx.name) {
           await dispatch(getCurrentSession(session.userCtx.name))
         }
-      } catch (e) {
+      } catch(e:any) {
         console.log(e)
       }
       setLoading(false)

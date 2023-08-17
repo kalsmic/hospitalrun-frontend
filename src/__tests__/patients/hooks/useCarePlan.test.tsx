@@ -28,7 +28,7 @@ describe('use care plan', () => {
 
     try {
       await executeQuery(() => useCarePlan(expectedPatientId, expectedCarePlan.id))
-    } catch (e) {
+    } catch(e:any) {
       expect(e).toEqual(new Error('Care Plan not found'))
     }
   })
