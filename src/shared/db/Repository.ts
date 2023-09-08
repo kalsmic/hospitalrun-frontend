@@ -115,7 +115,7 @@ export default class Repository<T extends AbstractDBModel> {
 
       await this.db.rel.save(this.type, entityToUpdate)
       return this.find(entity.id)
-    } catch (error) {
+    } catch (error:any) {
       return this.save(entity)
     }
   }

@@ -57,7 +57,7 @@ describe('useReportIncident', () => {
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore testing function failure
       await executeMutation(() => useRequestImaging(), {} as Imaging)
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedImagingRequestError)
       expect(ImagingRepository.save).not.toHaveBeenCalled()
     }

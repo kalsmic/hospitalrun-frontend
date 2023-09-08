@@ -20,7 +20,7 @@ describe('use add allergy', () => {
 
     try {
       await executeMutation(() => useAddAllergy(), { patientId: '123', allergy: {} as Allergy })
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedError)
     }
 

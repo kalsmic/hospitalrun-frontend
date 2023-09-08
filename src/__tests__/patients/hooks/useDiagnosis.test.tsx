@@ -41,7 +41,7 @@ describe('useDiagnosis', () => {
         () => useDiagnosis(expectedPatientId, expectedDiagnosisId),
         (queryResult) => queryResult.isError,
       )
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(new Error('Patient not found'))
     }
   })
@@ -58,7 +58,7 @@ describe('useDiagnosis', () => {
         () => useDiagnosis(expectedPatientId, expectedDiagnosisId),
         (queryResult) => queryResult.isError,
       )
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(new Error('Diagnosis not found'))
     }
   })

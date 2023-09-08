@@ -46,7 +46,7 @@ describe('useScheduleAppointment', () => {
         const result = useScheduleAppointment()
         return [result.mutate]
       }, {} as Appointment)
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedAppointmentError)
       expect(AppointmentRepository.save).not.toHaveBeenCalled()
     }

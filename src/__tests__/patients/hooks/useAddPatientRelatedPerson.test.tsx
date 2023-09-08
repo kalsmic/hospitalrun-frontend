@@ -23,7 +23,7 @@ describe('use add patient related person', () => {
         patientId: '123',
         relatedPerson: {} as RelatedPerson,
       })
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedError)
     }
 
@@ -41,7 +41,7 @@ describe('use add patient related person', () => {
         patientId: '123',
         relatedPerson: { patientId: '456' } as RelatedPerson,
       })
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedError)
     }
 

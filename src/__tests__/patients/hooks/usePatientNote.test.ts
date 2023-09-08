@@ -42,7 +42,7 @@ describe('use note', () => {
         () => usePatientNote(expectedPatientId, expectedNote.id),
         (query) => query.isError,
       )
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(new Error('Note not found'))
     }
   })

@@ -132,7 +132,7 @@ const ViewLab = () => {
         )
       }
       setError(undefined)
-    } catch (e) {
+    } catch (e:any) {
       setError(e)
     }
   }

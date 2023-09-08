@@ -45,7 +45,7 @@ describe('use care plan', () => {
         () => useCarePlan(expectedPatientId, expectedCarePlan.id),
         (query) => query.isError,
       )
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(new Error('Care Plan not found'))
     }
   })

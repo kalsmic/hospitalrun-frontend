@@ -45,7 +45,7 @@ describe('Use Request lab', () => {
 
     try {
       await executeMutation(() => useRequestLab(), lab)
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedError)
       expect(LabRepository.save).not.toHaveBeenCalled()
     }

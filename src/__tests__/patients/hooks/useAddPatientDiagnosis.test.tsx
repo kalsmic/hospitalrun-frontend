@@ -23,7 +23,7 @@ describe('use add diagnosis', () => {
         patientId: '123',
         diagnosis: {} as Diagnosis,
       })
-    } catch (e) {
+    } catch (e:any) {
       expect(e).toEqual(expectedError)
     }
 
